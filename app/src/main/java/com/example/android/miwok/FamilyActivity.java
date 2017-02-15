@@ -1,7 +1,7 @@
 package com.example.android.miwok;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -34,13 +34,13 @@ public class FamilyActivity extends AppCompatActivity {
         familyArray.add(new Word("grandfather", "paapa", R.drawable.family_grandfather));
 
 
-
-
-        WordAdapter Adapter = new WordAdapter(this, familyArray);
+        WordAdapter Adapter = new WordAdapter(this, familyArray, R.color.category_family);
 
         ListView listView = (ListView) findViewById(R.id.list);
 
         listView.setAdapter(Adapter);
+
+
 
     }
 

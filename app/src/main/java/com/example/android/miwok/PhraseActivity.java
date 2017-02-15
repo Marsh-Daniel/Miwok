@@ -38,7 +38,7 @@ public class PhraseActivity extends AppCompatActivity {
 
 
 
-        WordAdapter Adapter = new WordAdapter(this, phraseArray);
+        WordAdapter Adapter = new WordAdapter(this, phraseArray, R.color.category_phrases);
 
         ListView listView = (ListView) findViewById(R.id.list);
 
