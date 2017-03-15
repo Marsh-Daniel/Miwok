@@ -42,6 +42,8 @@ public class WordAdapter extends ArrayAdapter<Word> {
             listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.list_item, parent, false);
         }
+
+
             // Get the {@link AndroidFlavor} object located at this position in the list
             Word currentWordPosition = getItem(position);
 
@@ -56,6 +58,8 @@ public class WordAdapter extends ArrayAdapter<Word> {
             // Get the version number from the current AndroidFlavor object and
             // set this text on the number TextView
             numberTextView.setText(currentWordPosition.getmDefaultTranslation());
+
+
 
             // Find the ImageView in the list_item.xml layout with the ID list_item_icon
 
