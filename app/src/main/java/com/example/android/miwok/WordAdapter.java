@@ -59,8 +59,10 @@ public class WordAdapter extends ArrayAdapter<Word> {
             // set this text on the number TextView
             numberTextView.setText(currentWordPosition.getmDefaultTranslation());
 
+            ImageView  PlayButton = (ImageView) listItemView.findViewById(R.id.Play_button_id);
 
 
+            PlayButton.setImageResource(R.mipmap.ic_play_arrow_black_24dp);
             // Find the ImageView in the list_item.xml layout with the ID list_item_icon
 
 
@@ -72,6 +74,7 @@ public class WordAdapter extends ArrayAdapter<Word> {
 
             resourceImageView.setImageResource(currentWordPosition.getImageResourceID());
             resourceImageView.setVisibility(View.VISIBLE);
+
         }else {
             resourceImageView.setVisibility(View.GONE);
         }
